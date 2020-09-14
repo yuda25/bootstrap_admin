@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kartu prakerja</title>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/all.css">
+    <link rel="shortcut icon" href="asset/image/uwoy.jpg" type="image/x-icon">
+    <style>
+        #vector{
+            background-image: url(asset/image/logo.png);
+            background-color: aqua;
+            background-position: center;
+        }
+        #exampleModal{
+            
+        }
+        input{
+            border: 0; 
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4" id="sidebar">
+                <!-- logo -->
+                <div class="d-flex flex-column">
+                    <img class="mt-5" width="160" height="51" src="asset/image/logo1.png">
+                </div>
+                <!-- login info -->
+                <div class="d-flex flex-column pt-5">
+                    <h6>login</h6>
+                    <p class="lead">Masukkan akun anda untuk mendaftar</p>
+                </div>
+                <!-- login form -->
+                <div class="d-flex flex-column">
+                    <div>
+                        <div>
+                        <div>
+                    <form class="shadow-sm p-3 mb-5 bg-white rounded">
+                        <div>
+                            <smal>Email</smal>
+                        </div>
+                        <input class="button_click" type="text" placeholder="Email">
+                    </form>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div>
+                            <div>
+                        <form class="shadow-sm p-3 mb-5 bg-white rounded">
+                           <div>
+                            <div>
+                                <smal>password</smal>
+                            </div>
+                            <input class="button_click" type="pasword" id="password" name="password" placeholder="password"> <i class="position-relative far fa-eye" id="togglePassword"></i>
+                        </form>  
+                        </div> 
+                    </div>
+                    </div>
+                </div>
+                    <!-- login additional -->
+                    <div class="d-flex flex-row justify-content-between">
+                        <form><input type="checkbox"><smal class="ml-2">Remember me?</smal></form>
+                        <div>
+                            <a href="#">Forgot password?</a>
+                        </div>
+                    </div>
+                    <!-- register -->
+                    <div class="d-flex flex-row">
+                        <button type="button" class="btn btn-outline-primary mr-5">login</button>
+                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">
+                            register</button>
+                        </div>
+                        <!-- footer -->
+                        <div class="d-flex flex-row">
+                            copyright &copy; 2020
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 vh-100 border" id="vector">
+                    <!-- <img class="bg-primary" src="asset/image/logo.png" alt="logo"> -->
+                </div>
+                
+            </div>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- tombol x -->
+                        <!-- <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div> -->
+                        <!-- logo -->
+                        <div class="d-flex flex-column">
+                            <img class="mt-5 ml-3" width="160" height="51" src="asset/image/logo1.png">
+                        </div>
+                        <!-- text -->
+                        <div class="d-flex flex-column">
+                            <div class="mt-1 ml-3">
+                                <p style="color: blue"><b>yuk, daftar kartu kerja!</b></p>
+                                <p>mohon isi data di bawah ini dengan benar</p>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <!-- email -->
+                            <div>
+                                <div>
+                                <div>
+                            <form class="shadow-sm p-3 mb-5 bg-white rounded">
+                                <div>
+                                    <small>alamat email</small>
+                                </div>
+                                <input class="button_click" type="text" size="50" placeholder="alamat@gmail.com">
+                            </form>
+                        </div>
+                        </div>
+                        </div>
+                        <!-- password -->
+                        <div class="d-flex flex-column">
+                            <div>
+                                <div>
+                                    <div>
+                            <div class="form-group">
+                                <form class="shadow-sm p-3 mb-5 bg-white rounded">
+                                    <div>
+                                        <small>password</small>
+                                    </div>
+                                    <input class="button_click" type="pasword" id="password" name="password" size="50" placeholder="gunakan unam karakter atau lebih"> <i class="position-relative far fa-eye ml-n4" id="togglePassword"></i>
+                                </form>  
+                            </div>
+                            </div>
+                            </div>
+                            </div> 
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div>
+                                <div>
+                            <div class="form-group">
+                                <form class="shadow-sm p-3 mb-5 bg-white rounded">
+                                    <div>
+                                        <smal>konfirmasi password</smal>
+                                    </div>
+                                    <input class="button_click" type="pasword" id="password" name="password" size="50" placeholder="konfirmasi ulang password"> <i class="position-relative far fa-eye ml-n4" id="togglePassword"></i>
+                                </form>   
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <!-- centangan -->
+                        <div class="d-flex flex-row ml-3">
+                            <form class="mt-1"><input type="checkbox"></form>
+                            <p class="ml-1 mt-0">saya menyetujui <a href="#">syarat dan ketentuan</a> dan <a href="#">kebijakan privasi</a> yang berlaku.</p>
+                        </div>  
+                        
+                        <!-- register -->
+                        <div class="d-flex flex-row ml-3">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                register</button>
+                                
+                            </div>
+                            <p class="ml-3">sudah daftar?<a href="#">login</a></p>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <script src="asset/js/jquery-3.5.1.slim.min.js"></script>
+            <script src="asset/js/popper.min.js"></script>
+            <script src="asset/js/bootstrap.min.js"></script>
+            <script src="asset/js/mata.js"></script>
+            <script>
+                $(".button_click").click(function(el){
+                    root_el=this.parentNode.parentNode.parentNode;
+                    root_el.style="border-left:2px solid red";
+                });
+                
+                $(".button_click").focusout(function(el){
+                    root_el=this.parentNode.parentNode.parentNode;
+                    root_el.style="border-left:0";
+                });
+            </script>
+        </body>
+        </html>
